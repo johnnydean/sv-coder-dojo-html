@@ -15,22 +15,38 @@
         border-color: #abcdef;
         width: 300px;
         height: 200px;
-      }  
+      }
+
+      #nav-container {
+        position: fixed;
+        left: 10px;
+        top: 50px;
+      }
+
+      #content-container {
+        padding: 0 0 0 380px;
+        position: relative;
+        width: 400px;
+      }
     </style>
   </head>
   <body>
     <center><h1>Johnny's Mini Webpage</h1></center>
-    <p>
-      This is Johnny's mini webpage.<br/>
-      This is Johnny's mini paragraph.<br/>
-      This is Johnny's Coder Dojo Homework.
-    </p>
-    <ol>
-      <li>This is the first item in my list.</li>
-      <li>This is the second item in my list.</li>
-      <li>This is the third item in my list.</li>
-    </ol>
-    <img src="pi-pie.jpg"/><br/>
-    <img src="creeper-anatomy.jpg"/>
+    <div id="nav-container">
+      <ol>
+	<li>This is the first item in my list.</li>
+	<li>This is the second item in my list.</li>
+	<li>This is the third item in my list.</li>
+      </ol>
+    </div>
+    <div id="content-container">
+      <p>
+	This is Johnny's mini webpage.<br/>
+	This is Johnny's mini paragraph.<br/>
+	This is Johnny's Coder Dojo Homework.
+      </p>
+      <img src="pi-pie.jpg"/><br/><br/>
+      <img src="creeper-anatomy.jpg"/>
+    </div>
   </body>
 </html>
